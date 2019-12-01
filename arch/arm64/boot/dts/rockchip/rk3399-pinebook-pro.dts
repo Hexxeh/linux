@@ -777,9 +777,20 @@
 	status = "okay";
 };
 
+&cluster0_opp {
+	opp06 {
+		opp-hz = /bits/ 64 <1512000000>;
+		opp-microvolt = <1200000>;
+	};
+};
+
 &cluster1_opp {
 	opp08 {
 		opp-hz = /bits/ 64 <2000000000>;
+		opp-microvolt = <1300000>;
+	};
+	opp08 {
+		opp-hz = /bits/ 64 <2208000000>;
 		opp-microvolt = <1300000>;
 	};
 };
